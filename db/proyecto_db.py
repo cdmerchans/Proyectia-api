@@ -51,7 +51,7 @@ def obtener_proyectos(NombreEmpresa: str):
     lista_proyectos = []
     for key in proyectos:
         if key[0] == NombreEmpresa:
-            lista_proyectos.append({key[1]:proyectos[key]})
+            lista_proyectos.append(key[1])
     return lista_proyectos
 
 def obtener_proyectos_by_Id(NombreEmpresa: str, NombreProyecto: str):
