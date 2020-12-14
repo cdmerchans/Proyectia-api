@@ -11,7 +11,7 @@ app =FastAPI()
 
 @app.get("/")
 async def root():
-    return{"mensaje" : "Hola desde Heroku"}
+    return{"mensaje" : "Bienvenido a Proyectia"}
 
 @app.get("/proyectos/listado")
 async def main_obtener_proyectos(empresain: EmpresaIn):
