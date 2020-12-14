@@ -9,6 +9,10 @@ from fastapi import FastAPI, HTTPException
 
 app =FastAPI()
 
+@app.get("/")
+async def root():
+    return{"mensaje" : "Hola desde Heroku"}
+
 @app.get("/proyectos/listado")
 async def main_obtener_proyectos(empresain: EmpresaIn):
     NombreEmpresa = empresain.nombre_empresa
