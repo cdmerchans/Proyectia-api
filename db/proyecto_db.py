@@ -59,9 +59,9 @@ def obtener_proyectos_by_Id(NombreEmpresa: str, NombreProyecto: str):
     NombreProyectoKey = NombreProyecto.replace('_', ' ', 30)
     key = (NombreEmpresa, NombreProyectoKey)
     if key in proyectos:
-        proyecto = {key[1]:proyectos[key]}
+        proyecto = proyectos[key]
     else:
-        proyecto = []
+        proyecto = False
     return proyecto
 
 def crear_proyecto(NombreEmpresa: str, NombreProyecto: str, proyecto: Proyecto):

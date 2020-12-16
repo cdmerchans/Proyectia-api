@@ -1,7 +1,6 @@
 from pydantic import BaseModel
  
 class ProyectoIn(BaseModel):
-    nombre_empresa: str
     nombre_proyecto: str
 
 class ProyectoOut(BaseModel):
